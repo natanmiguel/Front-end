@@ -1,0 +1,94 @@
+@media only screen  
+and (max-width : 768px) {
+    .menuSome {
+        display: none;
+    }
+
+    .um,
+    .dois,
+    .tres {
+        background-color: #fff;
+        height: 4px;
+        width: 100%;
+        margin: 7px auto;
+        transition-duration: 0.7s;
+    }
+
+    .menuHamburguer {
+        width: 41px;
+        height: 38px;
+        margin-right: 24px;
+        margin-left: auto;
+    }
+
+    /*menu hamburguer on */
+    .menuSection.on {
+        display: flex;
+        justify-content: center;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #f26331;
+        z-index: 10;
+
+    }
+
+    .menuSection.on nav {
+        display: block;
+    }
+
+    .menuSection.on .menuHamburguer {
+        position: absolute;
+        right: 7px;
+        top: 15px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+   .menuSection.on .menuHamburguer .um {
+        transform: rotate(45deg) translate(7px, 6px);
+    }
+
+
+    .menuSection.on .menuHamburguer .dois {
+      opacity: 0;
+    }
+
+    .menuSection.on .menuHamburguer .tres {
+        transform: rotate(-45deg) translate(9px, -9px);
+    }
+    .menuSection.on nav ul {
+        
+        display: block;
+        width: 100%;
+        margin: auto;
+        margin-top: 45px;
+        padding-right: 0;
+    }
+
+   .menuSection.on .logo {
+        display: none;
+
+   }
+
+    .menuSection.on nav a {
+        display: none;
+    }
+
+    .menuSection.on nav ul p{
+        display: none;
+    }
+    .menuSection.on nav ul a{
+        display: block;
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    
+}
