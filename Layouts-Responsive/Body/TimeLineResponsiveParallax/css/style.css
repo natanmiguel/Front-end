@@ -1,0 +1,125 @@
+.timeline {
+	background-color: lightgray;
+	min-height: 40vh;
+	padding: 80px 3px;
+}
+
+.timelineItems {
+	max-width: 1000px;
+	
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timelineItems::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 2px;
+	background-color: #f26331;
+	left: calc(50% - 1px);
+}
+
+.timelineItem {
+	
+	margin-bottom: 40px;
+	width: 100%;
+	position: relative;
+
+}
+.timelineItem:last-child {
+	margin-bottom: 0;
+}
+.timelineItem:nth-child(odd){
+	padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timelineItem:nth-child(even){
+	padding-left : calc(50% + 30px);
+	text-align: left;
+}
+.timelineDot {
+	height: 15px;
+	width: 15px;
+	background-color: #20b380;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	
+}
+
+.timelineContent {
+	background-color: darkgray;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #20b380 ;
+}
+.timelineContentOpacity {
+	background-color: hsla(90,100%,50%,0.3);
+	box-shadow: 2px 2px 5px slyblue ;
+}
+
+.timelineContent.enfase p {
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: justify
+}
+
+.timelineContent p {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: justify
+}
+
+
+.parallax {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto !important;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-position: 50% 50% !important;
+	background-repeat: no-repeat;
+	background-attachment: fixed !important;
+	-webkit-background-attachment: fixed !important;
+	-moz-background-attachment: fixed !important;
+	-o-background-attachment: fixed !important;
+	background-size: cover !important;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.parallax h3 {
+	font-size: 60px;
+	font-weight: 600;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 3px black;
+	text-align: center;
+	align-items: center;
+	padding: 90px;
+}
+.parallax h4 {
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 3px black;
+	text-align: center;
+	align-items: center;
+	padding: 40px;
+}
+
+
+
+
+.parallaxImage {
+	background-image:url('../image.jpg');
+
+}

@@ -1,0 +1,30 @@
+
+@media only screen
+and (max-width: 490px) {
+    .parallax h3 {
+    font-size: 30px;
+    padding: 10px;
+    }
+    .timelineContent p {
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+ /*tablet*/
+@media only screen  
+and (max-width : 768px) {
+    .timelineItems::before {
+        left: 7px;
+    }
+    .timelineItem:nth-child(odd){
+        padding-right: 0;
+    }
+    .timelineItem:nth-child(odd),
+    .timelineItem:nth-child(even){
+        padding-left: 30px;
+    }
+    .timelineDot {
+        left: 0;
+ 
+}
